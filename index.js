@@ -16,7 +16,6 @@ for(let x=0; x < 10; x++){
 let y = 0;
 
 while(y < 10){
-    
     console.log(y);
     y++;
 }
@@ -24,14 +23,11 @@ while(y < 10){
 
 //forEach-metod - Detta är en array-metod och kan ENDAST användas för arrayer
 let myArr = ["Banan","Körsbär","Jordgubbar","Persika", "Äpple"];
-// for(let x=0; x < myArr.length; x++){
-//     console.log(myArr[x]);
-// }
 
 let berries = [];
 let fruits = [];
 
-//Non-mutative
+//Non-mutative - myArray kommer inte att ändras
 myArr.forEach((item) => {
     if(item === "Körsbär" || item === "Jordgubbar"){
         berries.push(item);
@@ -40,7 +36,6 @@ myArr.forEach((item) => {
     }
 })
 
-console.log(myArr);
 console.log("Berries: ", berries);
 console.log("Fruits: ", fruits);
 
